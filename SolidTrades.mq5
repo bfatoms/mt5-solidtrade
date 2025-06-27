@@ -3,9 +3,9 @@
 string WebhookURL = "https://solidtrade.ticketbux.com/api/trades";
 input string AccessToken = "";
 input string accountID = "TEST_ACCOUNT";
-input string SaveFileName = "last_deal.txt";
-input bool EnableDebugLogs = false;                            // ✅ DISABLED BY DEFAULT
-input bool ProcessHistoricalDeals = false;                    // ✅ OPTION TO SKIP HISTORICAL PROCESSING
+input string SaveFileName = "tradebux.sync";
+bool EnableDebugLogs = false;                            // ✅ DEBUG DISABLED BY DEFAULT
+input bool ProcessHistoricalDeals = false;                    // ✅ HISTORICAL PROCESSING
 input int MaxHistoricalDeals = 100;                          // ✅ LIMIT HISTORICAL PROCESSING
 
 ulong lastProcessedDeal = 0;
